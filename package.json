@@ -7,7 +7,7 @@
   "repository": "https://github.com/natomis-brad/express-basic",
   "scripts": {
     "start": "node ./build/index.js",
-    "setup": "npm install & typings install",
+    "setup": "npm install && typings install",
     "pretest": "NODE_ENV=test",
     "posttest": "NODE_ENV=dev",
     "test": "npm run compile && mocha ./build/test/*/**.js",

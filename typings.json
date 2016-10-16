@@ -12,7 +12,7 @@
     "mongoose": "registry:dt/mongoose#4.5.9+20161010180758",
     "morgan": "registry:dt/morgan#1.7.0+20160524142355",
     "nconf": "registry:dt/nconf#0.0.0+20160724073144",
-    "node": "registry:dt/node#6.0.0+20161010101523",
+    "node": "registry:dt/node#6.0.0+20161014191813",
     "orchestrator": "registry:dt/orchestrator#0.0.0+20160316155526",
     "q": "registry:dt/q#0.0.0+20161004185634",
     "serve-favicon": "registry:dt/serve-favicon#0.0.0+20160316155526",
