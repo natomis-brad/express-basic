@@ -3,5 +3,5 @@ node_js:
   - "6"
   - "5"
 before_script:
-  - npm install -g typings typescript
+  - npm install -g typings typescript tsc
   - typings install
