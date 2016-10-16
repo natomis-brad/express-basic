@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Brad Bates",
   "license": "MIT",
-  "repository":"https://github.com/natomis-brad/express-basic",
+  "repository": "https://github.com/natomis-brad/express-basic",
   "scripts": {
     "start": "node ./build/index.js",
     "setup": "npm install & typings install",
@@ -39,6 +39,7 @@
     "chai-http": "^3.0.0",
     "marked": "^0.3.6",
     "mocha": "^3.1.2",
-    "tsc": "^1.20150623.0"
+    "tsc": "^1.20150623.0",
+    "typescript": "^2.0.3"
   }
 }
