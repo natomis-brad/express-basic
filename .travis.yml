@@ -2,6 +2,6 @@ language: node_js
 node_js:
   - "6"
   - "5"
-install:
-  - npm install
-  - npm run setup
+before_script:
+  - npm install -g typings typescript
+  - typings install
