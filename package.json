@@ -1,0 +1,40 @@
+{
+  "name": "express-basic",
+  "description": "node-express-typescript Sample Application (TypeScript)",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "setup": "npm install & typings install",
+    "pretest": "NODE_ENV=test",
+    "posttest": "NODE_ENV=dev",
+    "test": "npm run compile && mocha ./build/test/*/**.js",
+    "test-nobuild": "mocha ./build/test/*/**.js",
+    "clean": "rimraf build",
+    "precompile": "npm run clean",
+    "postcompile": "npm run copy-static",
+    "compile": "npm run compile:ts",
+    "compile:ts": "tsc",
+    "ts-watch": "tsc -w",
+    "copy-static": "rsync -a ./src/configurations/*.json ./build/configurations/ && rsync -a ./src/test/mocha.opts ./build/test/"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "less-middleware": "^2.2.0",
+    "mongodb": "^2.2.10",
+    "mongoose": "^4.6.3",
+    "morgan": "^1.7.0",
+    "nconf": "^0.8.4",
+    "q": "^1.4.1",
+    "rimraf": "^2.5.4",
+    "serve-favicon": "^2.3.0",
+    "serve-static": "^1.11.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "marked": "^0.3.6",
+    "mocha": "^3.1.2"
+  }
+}
